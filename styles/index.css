@@ -1,0 +1,228 @@
+.main-container {
+    background-color: #9DBEBB;
+    width: 1440px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.sub-container {
+    display: inline-flex;
+    position: absolute;
+    width: 954px;
+    height: 594px;
+
+}
+
+.form-container {
+    position: relative;
+    width: 600px;
+    height: 594px;
+    background-color: #BE0909;
+
+
+}
+
+
+
+.duck-image {
+    position: absolute;
+    left: 330px;
+    top: 50px;
+    z-index: 10;
+    opacity: 100%;
+}
+
+.side {
+    position: relative;
+    width: 345px;
+    height: 594px;
+    background-color: #FFB039;
+}
+
+
+.label-name {
+    /* Full Name */
+    display: block;
+    margin: 20px;
+    /* width: 111px; */
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FEFFFF;
+}
+
+.name {
+    /* Line 1 */
+    margin: 20px;
+    display: block;
+    width: 400px;
+    height: 0px;
+    cursor: text;
+    border: 0.1px solid #9DBEBB;
+
+}
+
+.label-email {
+    /* Email */
+    display: block;
+    margin: 20px;
+    /* width: 60px; */
+    height: 21px;
+
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FCFFFF;
+
+
+}
+
+.email {
+    /* Line 2 */
+    display: block;
+    margin: 20px;
+    width: 160px;
+    height: 0px;
+    cursor: text;
+    border: 0.1px solid #9DBEBB;
+}
+
+.email::placeholder {
+    /* Your Email */
+
+    display: block;
+    margin: 20px;
+    /* width: 150px; */
+    height: 21px;
+    cursor: text;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    opacity: 0.5;
+    color: #FDFFFF;
+}
+
+.label-msg-regarding {
+    /* Message Regarding */
+    display: block;
+    /* width: 213px; */
+    height: 21px;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FEFFFF;
+}
+
+.msg-regarding {
+    /* Line 3 */
+    margin: 20px;
+    cursor: pointer;
+    width: 160px;
+    height: 0px;
+    display: block;
+
+    border: 1px solid #9DBEBB;
+}
+
+.label-message {
+    /* Message */
+    margin: 20px;
+    /* width: 93px; */
+    height: 21px;
+    cursor: pointer;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(254, 255, 255, 0.98);
+}
+
+.message::placeholder {
+    /* Your Message */
+    display: block;
+    margin: 20px;
+    width: 324px;
+    height: 21px;
+    cursor: pointer;
+    opacity: 0.5;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+
+    color: #FEFFFF;
+}
+
+.message {
+    /* Line 4 */
+    display: block;
+    margin: 20px;
+    cursor: text;
+    width: 400px;
+    height: 0px;
+    border: 1px solid #9DBEBB;
+}
+
+.form-button {
+    background-color: #468189;
+    display: block;
+    position: relative;
+    width: 202px;
+    height: 48px;
+    margin: 20px;
+    cursor: pointer;
+    background: #468189;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
