@@ -28,17 +28,33 @@
         <div class="sub-container">
             <div class="form-container">
                 <form class="duck-form" action="">
-                    <label for="full-name" class="label-name">FULL NAME</label>
-                    <input type="text" class="name" name="full-name">
-                    <label for="email" class="label-email" aria-placeholder="Your Email">EMAIL</label>
-                    <input type="email" name="email" class="email" id="email" placeholder="Your email">
+
+                    <label for="name" class="label-name">FULL NAME</label>
+                    <input type="text" name="name" id="name" class="name" minlength="2" maxlength="40" required focus>
+
+                    <label for="email" class="label-email" aria-placeholder="Your Email" focus>EMAIL</label>
+                    <input type="email" name="email" id="email" class="email" placeholder="Your Email" required
+                        autofocus>
+
+                    <label for="password" class="label-password" aria-placeholder="Your Password" focus>PASSWORD</label>
+                    <input type="password" name="password" id="password" class="password" placeholder="Your Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required>
+
                     <label for="message-regarding" class="label-msg-regarding">MESSAGE REGARDING</label>
-                    <select name="message-regarding" class="msg-regarding" id="message-regarding">
-                        <option>A</option>
-                        <option>B</option>
+                    <select name="message-regarding" class="msg-regarding" id="message-regarding" required focus>
+                        <option class="select-option" selected></option>
+                        <option class="select-option">A</option>
+                        <option class="select-option">B</option>
+                        <option class="select-option">C</option>
                     </select>
+
                     <label for="message" class="label-message">MESSAGE</label>
-                    <textarea name="message" col="5" rows="5" class="message" placeholder="Your message"></textarea>
+                    <textarea name="message" class="message" id="message" placeholder="Your Message" rows="1"
+                        minlength="10" maxlength="1000" required focus>
+                    </textarea>
+
                     <button type="submit" class="form-button">SEND MESSAGE</button>
                 </form>
             </div>

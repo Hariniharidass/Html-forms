@@ -2,7 +2,7 @@
 
 ## Summary
 The webpage layout from figma is converted to a HTML and CSS code.
-Used CSS position selector.
+Used HTML form elements and validations along with CSS attributes such as hover, focus.
 Used normalize.css
 
-![Figma design](/images/webpage-layout.png "webpage-layout")
+![Figma design](/images/Duck-form.png.png "webpage-layout")

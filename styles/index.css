@@ -25,7 +25,9 @@
 
 }
 
-
+.duck-form {
+    padding: 50px;
+}
 
 .duck-image {
     position: absolute;
@@ -43,93 +45,15 @@
 }
 
 
-.label-name {
-    /* Full Name */
-    display: block;
-    margin: 20px;
-    /* width: 111px; */
-    height: 21px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #FEFFFF;
-}
-
-.name {
-    /* Line 1 */
-    margin: 20px;
-    display: block;
-    width: 400px;
-    height: 0px;
-    cursor: text;
-    border: 0.1px solid #9DBEBB;
-
-}
-
-.label-email {
-    /* Email */
-    display: block;
-    margin: 20px;
-    /* width: 60px; */
-    height: 21px;
-
-    cursor: pointer;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    color: #FCFFFF;
-
-
-}
-
-.email {
-    /* Line 2 */
-    display: block;
-    margin: 20px;
-    width: 160px;
-    height: 0px;
-    cursor: text;
-    border: 0.1px solid #9DBEBB;
-}
-
-.email::placeholder {
-    /* Your Email */
-
-    display: block;
-    margin: 20px;
-    /* width: 150px; */
-    height: 21px;
-    cursor: text;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.3em;
-    opacity: 0.5;
-    color: #FDFFFF;
-}
-
+.label-name,
+.label-email,
+.label-password,
+.label-message,
 .label-msg-regarding {
-    /* Message Regarding */
     display: block;
-    /* width: 213px; */
-    height: 21px;
-    margin: 20px;
-    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -138,48 +62,54 @@
     /* identical to box height */
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
+    cursor: pointer;
     color: #FEFFFF;
+}
+
+.name,
+.email,
+.password,
+.msg-regarding,
+.message {
+    border: none;
+    outline: none;
+    border: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-width: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #9DBEBB;
+    cursor: text;
+    width: 75%;
+    background: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #FEFFFF;
+    resize: none;
+}
+
+.email,
+.password,
+.msg-regarding {
+    width: 50%;
 }
 
 .msg-regarding {
-    /* Line 3 */
-    margin: 20px;
     cursor: pointer;
-    width: 160px;
-    height: 0px;
-    display: block;
-
-    border: 1px solid #9DBEBB;
 }
 
-.label-message {
-    /* Message */
-    margin: 20px;
-    /* width: 93px; */
-    height: 21px;
-    cursor: pointer;
-    display: block;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    color: rgba(254, 255, 255, 0.98);
-}
-
+.email::placeholder,
+.password::placeholder,
 .message::placeholder {
-    /* Your Message */
     display: block;
-    margin: 20px;
-    width: 324px;
-    height: 21px;
-    cursor: pointer;
-    opacity: 0.5;
+    margin-left: 20px;
+    cursor: text;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -187,24 +117,14 @@
     line-height: 21px;
     /* identical to box height */
     letter-spacing: 0.3em;
-
-    color: #FEFFFF;
-}
-
-.message {
-    /* Line 4 */
-    display: block;
-    margin: 20px;
-    cursor: text;
-    width: 400px;
-    height: 0px;
-    border: 1px solid #9DBEBB;
+    opacity: 1;
+    color: #FDFFFF;
 }
 
 .form-button {
-    background-color: #468189;
+
     display: block;
-    position: relative;
+    align-self: center;
     width: 202px;
     height: 48px;
     margin: 20px;
@@ -223,6 +143,20 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
+    position: relative;
+    left: 100px;
     color: #FFFFFF;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=select]:hover,
+textarea:hover {
+    border-bottom: 1px solid #fbe305;
+}
+
+.form-button:hover {
+    background: #FFFFFF;
+    color: #468189;
 }
